@@ -24,26 +24,26 @@ int main()
 {
 	
 	int input;
-	while(cin>>input) //°ª ÀÔ·Â; 
+	while(cin>>input) //ê°’ ì…ë ¥; 
 	{
-		vector<int>save; //vector·Î 1,0ÀúÀå; 
-		int size=0,count=0; //size´Â Ãâ·Â¿ë, count´Â 1¸î°³ ³ª¿Ô´ÂÁö; 
+		vector<int>save; //vectorë¡œ 1,0ì €ì¥; 
+		int size=0,count=0; //sizeëŠ” ì¶œë ¥ìš©, countëŠ” 1ëª‡ê°œ ë‚˜ì™”ëŠ”ì§€; 
 		while(input>0)
 		{
 			size++;
 			if(input%2==1)
 			{
-				save.push_back(1); //1ÀÌ¸é ÀÔ·Â; 
+				save.push_back(1); //1ì´ë©´ ì…ë ¥; 
 				count++;
 			}
 			else if(input%2==0)
 			{
 				save.push_back(0);
 			}
-			input/=2; //³ª´©±â2 
+			input/=2; //ë‚˜ëˆ„ê¸°2; 
 		}
 		cout<<"The parity of ";
-		for(int j=size-1;j>=0;j--) //°Å²Ù·Î Ãâ·ÂÇØ¾ßÇÔ; 
+		for(int j=size-1;j>=0;j--) //ê±°ê¾¸ë¡œ ì¶œë ¥í•´ì•¼í•¨; 
 		{
 			cout<<save[j];
 		}
